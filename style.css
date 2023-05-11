@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html,
+body {
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: black;
+}
+.box {
+	display: flex;
+}
+.box .inner {
+	width: 250px;
+	height: 150px;
+	line-height: 120px;
+	font-size: 3em;
+	
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+     font-family: 'Russo One', sans-serif;;
+}
+.box .inner:first-child {
+	background-color: rgba(255, 0, 0, 0.658);
+	color: black;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+.box .inner:last-child {
+	background-color: indianred;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -160%;
+}
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+.user a{
+    position: absolute;
+    top:7%;
+	left:75%;
+    font-size: 1.5em;
+}
+.logout a{
+    position: absolute;
+    top:7%;
+	left:85%;
+    font-size: 1.5em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  top:30%;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+ 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.flip-card1 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	right:70%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card1:hover .flip-card-inner1 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front1, .flip-card-back1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front1 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back1 {
+	background-color: red;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back1 a{
+	  text-decoration: none;
+		color:white;
+  }
+
+
+
+
+
+  .flip-card2 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	left:40%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card2:hover .flip-card-inner2 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front2, .flip-card-back2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front2 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back2 {
+	background-color: red;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back2 a{
+	  text-decoration: none;
+		color:white;
+  }
+
+
+
+
+  .flip-card3 {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	position: absolute;
+	top: 140%;
+	left:70%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card3:hover .flip-card-inner3 {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front3, .flip-card-back3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front3 {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back3 {
+	background-color: red;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .flip-card-back3 a{
+	  text-decoration: none;
+		color:white;
+  }

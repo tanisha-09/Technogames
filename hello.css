@@ -1,0 +1,19 @@
+body{   
+    background-image: url("bg.jpeg");
+    background: blueviolet; 
+}  
+#frm{  
+    color: white;
+    border: solid rgb(0, 0, 0) 1px;  
+    width:25%;  
+    border-radius: 2px;  
+    margin: 120px auto;  
+    background: rgb(51, 42, 42);  
+    padding: 50px;  
+}  
+#btn{  
+    color: white;  
+    background: red;  
+    padding: 7px;  
+    margin-left: 45%;  
+}  
